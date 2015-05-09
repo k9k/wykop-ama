@@ -1,0 +1,25 @@
+-------  ------------  ----------------
+         Korwin-Mikke
+Miejsce  Słowo         Liczba wystąpień
+-----    --------      ----------------
+1        sie           31
+2        tak           19
+3        pan           13
+4        było          8
+5        oczywiście    7
+6        ludzie        6
+7        likwidacja    6
+8        chyba         6
+9        np            6
+10       dzis          6
+11       może          6
+12       mam           6
+13       albo          5
+14       te            5
+15       ile           5
+16       bez           5
+17       pewno         5
+18       ogóle         5
+19       teraz         4
+20       lasy          4
+-------  ------------  ----------------

@@ -1,0 +1,25 @@
+-------  ---------------  ----------------
+         Marian_Kowalski
+Miejsce  Słowo            Liczba wystąpień
+-----    --------         ----------------
+1        mam              9
+2        lat              9
+3        trzeba           7
+4        należy           5
+5        jeśli            4
+6        zwolennikiem     4
+7        ue               4
+8        przeciw          4
+9        uważam           4
+10       obecnie          4
+11       tak              4
+12       też              4
+13       było             3
+14       będę             3
+15       powinien         3
+16       marszu           3
+17       polsce           3
+18       sobie            3
+19       powinno          3
+20       systemu          3
+-------  ---------------  ----------------

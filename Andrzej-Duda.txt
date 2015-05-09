@@ -1,0 +1,25 @@
+-------  ------------  ----------------
+         Andrzej-Duda
+Miejsce  Słowo         Liczba wystąpień
+-----    --------      ----------------
+1        tak           9
+2        polsce        7
+3        ludzie        6
+4        więcej        6
+5        wszystkim     5
+6        polska        5
+7        prezydent     5
+8        myślę         5
+9        będzie        5
+10       państwa       5
+11       możliwości    4
+12       powinna       4
+13       przede        4
+14       powinien      4
+15       musi          4
+16       naszego       4
+17       zostać        4
+18       budżetu       4
+19       stworzyć      4
+20       powinny       3
+-------  ------------  ----------------

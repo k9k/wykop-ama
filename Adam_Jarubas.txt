@@ -1,0 +1,25 @@
+-------  ------------  ----------------
+         Adam_Jarubas
+Miejsce  Słowo         Liczba wystąpień
+-----    --------      ----------------
+1        polski        9
+2        mnie          7
+3        ͜ʖ            7
+4        ͡º            7
+5        wszystkim     7
+6        przede        7
+7        ͜ʖ͡º          7
+8        powinien      7
+9        kampanii      7
+10       chcę          7
+11       psl           7
+12       polsce        6
+13       tak           5
+14       dziś          5
+15       polska        5
+16       uważam        5
+17       musi          5
+18       przed         4
+19       polakom       4
+20       polskich      4
+-------  ------------  ----------------

@@ -1,0 +1,25 @@
+-------  -------------  ----------------
+         Pawel_Tanajno
+Miejsce  Słowo          Liczba wystąpień
+-----    --------       ----------------
+1        tak            78
+2        referendum     55
+3        ja             37
+4        obywateli      32
+5        bez            29
+6        ?              29
+7        mi             26
+8        demokracji     24
+9        mam            24
+10       bezpośredniej  23
+11       wiem           23
+12       jeśli          23
+13       db             23
+14       polityków      23
+15       państwa        23
+16       zus            22
+17       polsce         22
+18       pytanie        21
+19       chodzi         21
+20       obywatele      19
+-------  -------------  ----------------

@@ -1,0 +1,25 @@
+-------  --------------  ----------------
+         Janusz-Palikot
+Miejsce  Słowo           Liczba wystąpień
+-----    --------        ----------------
+1        tak             13
+2        trzeba          13
+3        mnie            10
+4        ustaw           9
+5        ludzi           8
+6        jako            8
+7        jkm             8
+8        podatku         8
+9        musimy          7
+10       jedyny          7
+11       kadencji        7
+12       projektów       7
+13       osób            7
+14       była            6
+15       złożyłem        6
+16       kwota           6
+17       pan             6
+18       ludzie          6
+19       prawo           6
+20       firma           6
+-------  --------------  ----------------
