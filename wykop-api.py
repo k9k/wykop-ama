@@ -8,6 +8,7 @@ import configparser
 
 
 def get_rank(name, ignored_words):
+    """returns tuple of tuples (words, counter)"""
     all_messages = []
     for page_nr in range(1,30):
         try:
@@ -22,17 +23,20 @@ def get_rank(name, ignored_words):
             print("You have probably reached API requests limit")
 
 def get_url(name, page_nr):
+    """returns url for a chosen candidate"""
     api_key = get_key()
     url = ("http://a.wykop.pl/profile/comments/" + str(name) + "/appkey," + api_key + "/" + "page," + str(page_nr)).encode('utf-8')
     return url
 
 def get_headers(url):
+    """returns proper headers which are needed for Wykop API"""
     api_secret = get_secret().encode('utf-8')
     header = api_secret + url
     headers = {'apisign' : hashlib.md5(header).hexdigest()}
     return headers
 
 def filter_words(message_list, ignored_words):
+    """filters message list from words that should be ignored"""
     words = {}
     for message in message_list:
         for word in remove_interpunction(message).split():
@@ -45,14 +49,16 @@ def filter_words(message_list, ignored_words):
     return sort_data(words)
 
 def remove_interpunction(message):
-    signs = ['.',',',':','/','-','<','>','\'','(',')',';']
+    """removes interpunction"""
+    signs = ['.',',',':','/','-','<','>','\'','(',')',';','?','!']
     for sign in signs:
         if sign in message:
             message = message.replace(sign, "")
     return message
 
 def is_trash(word):
-    trash = ['href=', '@<a', '<br', '@a', 'br', '͡°']
+    """checks if word is a trash, f.e. parts of links, emoticons"""
+    trash = ['href=', '@<a', '<br', '@a', 'br', '͡°', ' ͜ʖ', '͡º', ' ͜ʖ͡º', ' ͜ʖ']
     for item in trash:
         if item in word:
             return True
@@ -65,7 +71,7 @@ def sort_data(data):
 
 def pack_data(data, number_to_print, name):
     """returns data in pretty table, user sets how many records are printed"""
-    table = [["", name, ""],["Miejsce", "Słowo", "Liczba wystąpień"], ["-----", "--------", "----------------"]]
+    table = [["", name, ""],["Place", "Word", "Counts"], ["-----", "---------------", "------"]]
     for index, item in enumerate(data):
         if index < number_to_print:
             table.append([index+1, item[0], item[1]])
@@ -101,7 +107,7 @@ def main():
                      'po', 'że', 'tylko', 'mieć', 'być', 'co', 'już', 'żeby', 'ten', 'jak', 'bo', 'gdy', 'także', 'ze' \
                      'też', 'tej', 'aż', 'gdyż', 'nad', 'tego', 'które', 'który', 'więc', 'taki', 'taka', 'takiej' \
                      'którą', 'ze', 'tym', 'są', 'jest', 'będą', 'sa', 'by', 'są', 'byc', 'czy', 'być', 'sa', 'dla' \
-                     'aby', 'ma', 'dla', 'przez', 'aby', 'bardzo']
+                     'aby', 'ma', 'dla', 'przez', 'aby', 'bardzo', 'przede', 'te', 'sie', 'beda', 'no', 'też']
     nicks = ['Marian_Kowalski', 'Pawel_Tanajno', 'Korwin-Mikke', 'Andrzej-Duda', 'Janusz-Palikot', 'Adam_Jarubas']
     for name in nicks:
         packed_data = pack_data(get_rank(name, ignored_words), 20, name)
